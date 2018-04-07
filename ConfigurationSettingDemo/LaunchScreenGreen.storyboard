@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e5u-zq-a9v">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="krI-75-u3O">
+            <objects>
+                <viewController id="e5u-zq-a9v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4W-jM-Y07">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 kynguyen. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-0V-59U">
+                                <rect key="frame" x="0.0" y="626.5" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="l4U-hb-abK">
+                                <rect key="frame" x="123" y="103" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4U-hb-abK" secondAttribute="height" multiplier="1:1" id="FaJ-U3-qiB"/>
+                                    <constraint firstAttribute="width" constant="128" id="wSb-E8-ogk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="T7L-ex-jQf">
+                                <rect key="frame" x="112" y="287" width="152" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T7L-ex-jQf" firstAttribute="top" secondItem="l4U-hb-abK" secondAttribute="bottom" constant="56" id="Gxs-ib-Obm"/>
+                            <constraint firstItem="bhR-0V-59U" firstAttribute="leading" secondItem="yuI-44-v2X" secondAttribute="leading" symbolic="YES" id="IoI-un-Qlb"/>
+                            <constraint firstItem="yuI-44-v2X" firstAttribute="centerX" secondItem="bhR-0V-59U" secondAttribute="centerX" id="OaY-mj-5NX"/>
+                            <constraint firstItem="T7L-ex-jQf" firstAttribute="centerX" secondItem="V4W-jM-Y07" secondAttribute="centerX" id="SGl-qU-mqO"/>
+                            <constraint firstAttribute="bottom" secondItem="bhR-0V-59U" secondAttribute="bottom" constant="20" id="acL-WY-3Is"/>
+                            <constraint firstItem="l4U-hb-abK" firstAttribute="centerY" secondItem="V4W-jM-Y07" secondAttribute="centerY" multiplier="1/2" id="msF-f9-oc3"/>
+                            <constraint firstItem="l4U-hb-abK" firstAttribute="centerX" secondItem="V4W-jM-Y07" secondAttribute="centerX" id="s2z-pW-KXy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yuI-44-v2X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBv-dU-MnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green" width="1024" height="1024"/>
+    </resources>
+</document>
